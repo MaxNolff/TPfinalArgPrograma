@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -22,37 +20,70 @@
                         <img class="navbar__logo" src="img/APLogo.png" alt="Logo Argentina Programa">
                     </a>
                 </div>
-                <nav class="navbar__menu-container" role="navigation">                    
+                <nav class="navbar__menu-container">
                     <ul class="navbar__menu">
                         <li class="navbar__menu__item">
-                            <a href="#">Inicio</a>
+                            <a class="navbar__menu__link" href="#header">
+                                <div class="menu__icon">
+                                    <img src="img/home-icon.svg" alt="">
+                                </div>
+                                <div class="menu__name">Inicio</div>
+                            </a>
                         </li>
                         <li class="navbar__menu__item">
-                            <a href="#">Acerca de</a>
+                            <a class="navbar__menu__link" href="#about">
+                                <div class="menu__icon">
+                                    <img src="img/about-icon.svg" alt="">
+                                </div>
+                                <div class="menu__name">Acerca de</div>                                
+                            </a>
                         </li>
                         <li class="navbar__menu__item">
-                            <a href="#">Experiencia</a>
+                            <a class="navbar__menu__link" href="#experience">
+                                <div class="menu__icon">
+                                    <img src="img/experience-icon.svg" alt="">
+                                </div>
+                                <div class="menu__name">Experiencia</div>
+                            </a>
                         </li>
                         <li class="navbar__menu__item">
-                            <a href="#">Educación</a>
+                            <a class="navbar__menu__link" href="#education">
+                                <div class="menu__icon">
+                                    <img src="img/education-icon.svg" alt="">
+                                </div>
+                                <div class="menu__name">Educación</div>
+                            </a>
                         </li>
                         <li class="navbar__menu__item">
-                            <a href="#">Habilidades</a>
+                            <a class="navbar__menu__link" href="#skills">
+                                <div class="menu__icon">
+                                    <img src="img/skills-icon.svg" alt="">
+                                </div>
+                                <div class="menu__name">Habilidades</div>
+                            </a>
                         </li>
                         <li class="navbar__menu__item">
-                            <a href="#">Proyectos</a>
+                            <a class="navbar__menu__link" href="#projects">
+                                <div class="menu__icon">
+                                    <img src="img/project-icon.svg" alt="">
+                                </div>
+                                <div class="menu__name">Proyectos</div>
+                            </a>
                         </li>
                     </ul>                    
                 </nav>
                 <div class="contenedor-login">
-                    <button id="btn__login" class="btn__login">ingresar</button>
+                    <button id="btn__login" class="btn__login">entrar</button>
                 </div>
             </div>            
         </div>
         <section id="profile" class="container">
-            <div class="card card__profile">
+            <div class="card__profile">
                 <div class="container profile__cover-container">
-                    <img class="profile__cover-img" src="img/pexels-alexander-ant-4585185.jpg" alt="banner image">
+                    <img class="profile__cover-img" src="img/banner-img.jpg" alt="banner image">
+                </div>
+                <div class="profile__socialmedia">
+                    
                 </div>
                 <div class="profile__img-portrait">
                     <div class="profile__img-container">
@@ -60,35 +91,35 @@
                     </div>
                 </div>                
                 <div class="profile__text">
-                    <h1 class="profile__user-name">Max Nolff</h1>
-                    <h2 class="profile__subtitle">Desarrollador web full stack Jr.</h2>
-                    <h3 class="profile__location">Buenos Aires - Argentina</h3>
+                    <h1 class="profile__user-name highlight-text mrg-1">Max Nolff</h1>
+                    <h2 class="profile__subtitle mrg-1">Desarrollador web full stack Jr.</h2>
+                    <h3 class="profile__location mrg-1">Buenos Aires - Argentina</h3>
                 </div>
             </div>
         </section>                    
     </header>
     
     <main class="container">        
-        <section id="about">
-            <h2>Acerca de mi</h2>
+        <section class="section card" id="about">
+            <h2 class="section__title highlight-text">Acerca de mi</h2>
             <p>
                 Soy un <em>Desarrollador Web Full Stak Jr.</em> en busca de su primer trabajo en IT
             </p>
         </section>
-        <section id="experience">
-            <h2>Experiencia</h2>
+        <section class="section card" id="experience">
+            <h2 class="section__title highlight-text">Experiencia</h2>
         </section>
-        <section id="education">
-            <h2>Educación</h2>
+        <section class="section card" id="education">
+            <h2 class="section__title highlight-text">Educación</h2>
         </section>
-        <section id="skills">
-            <h2>Habilidades</h2>
+        <section class="section card" id="skills">
+            <h2 class="section__title highlight-text">Habilidades</h2>
         </section>
-        <section id="projects">
-            <h2>Proyectos</h2>
+        <section class="section card" id="projects">
+            <h2 class="section__title highlight-text">Proyectos</h2>
         </section>
     </main>
-    <footer>        
+    <footer id="footer" class="footer">        
     </footer>
     <script>
 
